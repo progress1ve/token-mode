@@ -1,0 +1,6 @@
+interface:
+  display_name: "Token mode"
+  short_description: "Switch chat economy or detailed work oversight"
+  default_prompt: "Use $token-mode to switch this chat to economy mode."
+policy:
+  allow_implicit_invocation: true
