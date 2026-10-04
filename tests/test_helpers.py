@@ -35,7 +35,7 @@ class Helpers(unittest.TestCase):
                 installer.install(target, rules)
             installer.install(target, rules, True)
             self.assertEqual((target / "notes.md").read_text(), "Keep me")
-            text = rules.read_text()
+            text = rules.read_text(encoding="utf-8")
             self.assertTrue(text.startswith("Owner rules\n"))
             self.assertEqual(text.count(installer.START), 1)
 
