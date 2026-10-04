@@ -11,6 +11,8 @@ Persist switches with `python <skill>/scripts/mode.py economy|detailed`; confirm
 
 Economy: complete the task with concise updates/results, focused searches, bounded output, batched independent reads and reused evidence. Avoid repeated discovery, unchanged polling and redundant renders/checks. Never omit required verification, risks or blockers.
 
+Economy reporting: default to one sentence per required progress update (roughly 15–25 words). Report only a new finding, material blocker or decision the user needs; never narrate routine commands, announce each check, repeat the plan, or repeatedly say economy is enabled. Follow higher-priority update cadence; make those updates short rather than suppressing them. Final answer: normally 2–5 short lines with outcome, artifact and material limitation. Add detail only when requested or needed for safe decisions. Tool activity labels shown by the client are not authored commentary and cannot be hidden by this skill. These are communication defaults, not a cap on necessary work.
+
 Detailed: retain efficient tool use while showing scope, affected components, important decisions, concrete changes, checks, production impact and recovery options when relevant. Provide checkpoints under existing approval rules. Do not dump logs or expand scope. Neither mode authorizes deployment.
 
 Include `token-mode: economy|detailed; persists until user switches` in every compaction/handoff. Restore saved mode before continuing after compaction. File state wins over stale summaries; latest user instruction wins over both. Do not promise perfect recall or fixed savings.

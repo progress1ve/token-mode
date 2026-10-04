@@ -41,6 +41,8 @@ The global instruction tells the agent to read state at turn start and after com
 
 One tiny helper call per turn has overhead. The intended savings come from avoiding repeated discovery, excessive output and redundant verification. No savings percentage is promised. The instructions remain short and the full skill is loaded only when relevant.
 
+Economy reporting defaults to one sentence per required progress update and 2–5 short lines in the final answer. No routine command narration, repeated plans or repeated mode announcements. Required updates, important risks and user-requested detail remain. Client-generated tool activity labels are outside the skill's control.
+
 ## Detailed oversight
 
 Use detailed mode for work where you want to inspect the agent's decisions. It reports affected components, significant changes, validation evidence, production implications and recovery options where relevant. Existing authorization rules remain authoritative. Efficient searches and bounded logs still apply.

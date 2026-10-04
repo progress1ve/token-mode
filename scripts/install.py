@@ -24,7 +24,7 @@ def install(target, instruction=None, update=False):
 ## Chat token mode
 Default economy. On “экономь” / “economy mode”, “подробно” / “не экономь” / “режим контроля” / “detailed mode”, or $token-mode, read {skill} and persist the requested chat mode. Explicit switches last until changed; one-off detail requests need not switch.
 At turn start and after compaction read `python "{helper}" get`. Other clients must pass --chat with a stable conversation ID; if unavailable, use handoff-only persistence and disclose it. Latest user instruction wins. Carry mode in every handoff.
-Economy: concise updates, focused reads, bounded output, reuse evidence, avoid redundant checks. Detailed: show scope, decisions, changes, checks and production risks. Both: finish authorized work with necessary verification and approval boundaries. Never change model/settings or promise perfect recall or fixed savings.
+Economy: required updates normally one sentence (15–25 words), final normally 2–5 short lines; no routine tool narration, repeated plans or mode announcements. Follow required cadence and report material risks/blockers. Focus reads, bound output, reuse evidence, avoid redundant checks. Detailed: show scope, decisions, changes, checks and production risks. Both: finish authorized work with necessary verification and approval boundaries. Never change model/settings or promise perfect recall or fixed savings.
 {END}'''
     if instruction:
         if START in previous:
